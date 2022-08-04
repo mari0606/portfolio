@@ -1,0 +1,22 @@
+// @mixin color {
+//   font-size: 5rem;
+//   color: aqua;
+//   letter-spacing: 0.5em;
+// }
+
+
+//line-height計算
+@function line-height($fHeight, $fSize) {
+  @return $fHeight / $fSize;
+}
+
+//@media screen
+$breakpoint: (sp: 'screen and (max-width: 768px)',
+  pc: 'screen and (max-width: 1080px)' //769,1024
+);
+
+@mixin mq($bp) {
+  @media #{map-get($breakpoint, $bp)} {
+    @content;
+  }
+}

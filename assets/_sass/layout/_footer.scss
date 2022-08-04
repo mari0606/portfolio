@@ -1,0 +1,51 @@
+@use "../foundation/import"as f;
+
+//------------------------------------------------------------
+//footer   
+//------------------------------------------------------------
+
+.l-footer {
+  padding-bottom: 50px;
+  background-color: f.$bg-black;
+}
+
+.p-footer {
+  & p {
+    color: f.$white;
+    font-size: 1.4rem;
+    text-align: center;
+  }
+
+  &__icon {
+    display: flex;
+    justify-content: center;
+    padding: 40px 0;
+    & li {
+      width: 50px;
+      margin-left: 20px;
+    }
+    & li:nth-child(1) {
+      margin-left: 0px;
+    }
+    & a {
+      display: block;
+    }
+    & a:hover {
+      opacity: .3;
+    }
+  }
+}
+
+.wave {
+  position: relative;
+  height: 80px;
+  background-color: f.$green;
+  overflow: hidden;
+}
+
+#wavecanvas {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+}

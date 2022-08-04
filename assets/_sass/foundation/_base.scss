@@ -1,0 +1,98 @@
+@use "../foundation/import"as f;
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%; //1rem=10px
+}
+
+body {
+  font-family: 'PT Serif';
+  color: f.$black;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: top;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.wrapper {
+  max-width: 1080px;
+  margin: 0 auto;
+  text-align: center;
+}
+//------------------------------------------------------------
+//scrollfadeIn
+//------------------------------------------------------------
+.scroll_up {
+  transition: 0.8s ease-in-out;
+  transform: translateY(40px);
+  opacity: 0;
+}
+.scroll_up.on {
+  transform: translateY(0);
+  opacity: 1.0;
+}
+.time02 {
+  transition-delay: .3s;
+}
+.time03 {
+  transition-delay: .5s;
+}
+.time04 {
+  transition-delay: .7s;
+}
+//------------------------------------------------------------
+//@media screen (max-width:1080px)
+//------------------------------------------------------------
+@include f.mq(pc) {
+  body {
+    min-width: 1100px;
+  }
+
+  .wrapper {
+    width: 1080px;
+    margin: 0 auto;
+    padding: 0 20px;
+    
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+//------------------------------------------------------------
+//@media screen (max-width:768px)
+//------------------------------------------------------------
+@include f.mq(sp) {
+  body {
+    min-width: auto; //
+  }
+
+  .wrapper {
+    width: 100%;
+  }
+  .pc {
+    display: none;
+  }
+}
+
+//------------------------------------------------------------
+//safari
+//------------------------------------------------------------
+
+_::-webkit-full-page-media, _:future, :root .wave {
+  height: 75px;
+  }

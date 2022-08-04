@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <title>contactform</title>
+  <meta name="description" content="potpforio">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&family=PT+Serif&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/js/swiper-bundle.min.css">
+  </link>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+<body id="form">
+  <!------------------------------ header ------------------------------>
+  <header class="l-header">
+    <div class="l-header__toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <div class="l-header__inner">
+      <ul class="l-header__list">
+        <li>
+          <a href="../index.html#about">ABOUT</a>
+        </li>
+        <li>
+          <a href="../index.html#skills">SKILLS</a>
+        </li>
+        <li>
+          <a href="../index.html#works">WORKS</a>
+        </li>
+        <li>
+          <a href="../index.html#contact">CONTACT</a>
+        </li>
+      </ul>
+    </div>
+  </header>
+  <!------------------------------ form ------------------------------>
+  <main>
+    <section class="p-contactform">
+      <div class="c-title">
+        <h2>お問合せ</h2>
+      </div>
+      <form method="post" action="https://hyperform.jp/api/XBBI5NFy">
+        <div>
+          <label>お名前</label>
+          <input type="text" name="お名前" placeholder="例）山田太郎" required>
+        </div>
+        <div>
+          <label>メールアドレス</label>
+          <input type="email" name="email" placeholder="例）example@example.com" required>
+        </div>
+        <div>
+          <label>お問い合わせ内容</label>
+          <textarea name="お問い合わせ内容" required></textarea>
+        </div>
+        <button type="submit" class="send">送信</button>
+      </form>
+    </section>
+  </main>
+  <!------------------------------ topbtn ------------------------------>
+  <div id="cーtopbtn"><a href="#"></a></div>
+  <!------------------------------ footer ------------------------------>
+  <footer class="l-footer">
+    <p id="page-top"><a href="#">▲</a></p>
+    <div class="wave morewave">
+      <canvas id="waveCanvas"></canvas>
+    </div>
+    <div class="p-footer">
+      <ul class="p-footer__icon">
+        <li><a href="https://www.instagram.com/mau66k/"><img src="../assets/img/insta.png" alt="インスタグラム"></a></li>
+        <li><a href="#"><img src="../assets/img/GitHub.png" alt="GitHub"></a></li>
+      </ul>
+      <p>&copy 2022 mari yamaguchi portfolio</p>
+    </div>
+  </footer>
+  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+  <script src="../assets/js/common.js"></script>
+</body>
+
+</html>

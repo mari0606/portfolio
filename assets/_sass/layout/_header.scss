@@ -1,0 +1,256 @@
+@use "../foundation/import"as f;
+
+//------------------------------------------------------------
+//header  
+//------------------------------------------------------------
+
+.l-header {
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    max-width: 1240px;
+    height: 100px;
+    margin: 0 auto;
+    padding: 0 3%;
+  }
+
+  &__list {
+    display: flex;
+    gap: 0 70px;
+  }
+
+  li {
+    font-size: 2.5rem;
+  }
+
+  a {
+    display: inline-block;
+    position: relative;
+    color: f.$black;
+
+    &:hover {
+      opacity: 0.6;
+
+      &::before {
+        transform: scale(1);
+      }
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 0.8px;
+      bottom: 1px;
+      background: #555;
+      transform: scale(0, 1);
+      transform-origin: left;
+      transition: 0.4s;
+    }
+  }
+}
+
+.p-mv {
+  &__flex {
+    display: flex;
+    position: relative;
+  }
+
+  &__lead {
+    position: absolute;
+    width: 45%;
+    left: 50px;
+    top: 60px;
+    z-index: 999;
+  }
+
+  &__bg {
+    width: 21%;
+    height: 600px;
+    background-color: f.$beige;
+    z-index: 2;
+  }
+
+  &__img {
+    width: 79%;
+
+    & img {
+      vertical-align: top;
+      width: 100%;
+      height: 600px;
+      object-fit: cover;
+    }
+  }
+
+  &__vertical {
+    display: flex;
+    writing-mode: vertical-rl;
+    padding: 200px 0px 40px;
+    color: f.$gray;
+    font-size: 5rem;
+    float: right;
+  }
+
+  span {
+    opacity: 0;
+
+  }
+
+  @keyframes showtext {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+}
+
+//------------------------------------------------------------
+//swiper
+//------------------------------------------------------------
+.swiper-slide {
+  &[class*=-active] {
+    .slide-media img {
+      transition-delay: 0s;
+      transform: scale(1.05);
+    }
+
+    .slide-title {
+      animation: mv01-fadeIn 2s .5s var(--easing) both;
+    }
+  }
+}
+
+@keyframes mv01-fadeIn {
+  0% {
+    transform: scale(.5);
+    opacity: 0;
+    filter: blur(300px);
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 1;
+    filter: blur(0);
+  }
+}
+
+//------------------------------------------------------------
+//@media screen(max-width768)
+//------------------------------------------------------------
+
+@include f.mq(sp) {
+  .l-header__inner {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    right: -120%;
+    background-color: #999;
+    color: #fff;
+    opacity: 0.9;
+    text-align: center;
+    transition: all 0.6s;
+    z-index: 999;
+  }
+
+  .l-header {
+    height: 100px;
+  }
+
+  .l-header__inner.panelactive {
+    right: 0;
+    display: flex;
+    justify-content: center;
+  }
+
+
+  .l-header__list {
+    flex-direction: column;
+    position: absolute;
+    gap: 40px 0;
+    text-align: center;
+
+    & a {
+      color: f.$white;
+    }
+  }
+
+  .l-header__toggle {
+    display: inline-block;
+    position: fixed;
+    width: 70px;
+    height: 70px;
+    margin-left: auto;
+    top: 20px;
+    right: 20px;
+    transform: scale(-1, 1); //反転
+    z-index: 9999;
+
+    & span {
+      display: block;
+      position: absolute;
+      width: 30px;
+      height: 2px;
+      left: 16px;
+      background-color: f.$black;
+      transition: all .3s;
+
+      &:nth-child(1) {
+        width: 40px;
+        top: 20px;
+      }
+
+      &:nth-child(2) {
+        width: 30px;
+        top: 35px;
+      }
+
+      &:nth-child(3) {
+        width: 20px;
+        top: 50px;
+      }
+    }
+
+    &.open span {
+      &:nth-child(1) {
+        width: 40px;
+        top: 35px;
+        transform: rotate(315deg);
+      }
+
+      &:nth-child(2) {
+        width: 0;
+        left: 50%;
+      }
+
+      &:nth-child(3) {
+        width: 40px;
+        top: 35px;
+        transform: rotate(-315deg);
+      }
+    }
+  }
+
+  .p-mv {
+    &__vertical {
+      font-size: 3.5rem;
+    }
+
+    &__lead {
+      width: 70%;
+      top: 80px;
+    }
+
+    &__bg {
+      height: auto;
+    }
+
+    .swiper-wrapper {
+      height: 500px;
+    }
+  }
+}
