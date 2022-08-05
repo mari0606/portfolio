@@ -550,7 +550,7 @@ _:future,
     opacity: 0.9;
     text-align: center;
     transition: all 0.6s;
-    z-index: 999999999;
+    z-index: 999;
   }
   .l-header {
     height: 100px;
