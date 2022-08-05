@@ -1187,6 +1187,7 @@ _:future,
   top: 20px;
   -webkit-animation: fluffy1 2.5s ease infinite;
           animation: fluffy1 2.5s ease infinite;
+  transform: scale(1, -1);
 }
 @-webkit-keyframes fluffy1 {
   0% {

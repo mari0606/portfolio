@@ -6,6 +6,7 @@
 
 .c-title {
   text-align: center;
+
   & h2 {
     display: inline-block;
     position: relative;
@@ -280,6 +281,10 @@
   top: 20px;
   animation: fluffy1 2.5s ease infinite;
 
+  img {
+    transform: rotate(180deg);
+  }
+
   @keyframes fluffy1 {
     0% {
       transform: translateY(0);
@@ -314,6 +319,7 @@
     }
   }
 }
+
 //------------------------------------------------------------
 //@media screen
 //------------------------------------------------------------
@@ -352,6 +358,7 @@
 
   .c-btn {
     background-color: f.$hover;
+
     & a {
       color: f.$white;
     }
