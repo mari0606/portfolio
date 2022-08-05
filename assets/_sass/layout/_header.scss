@@ -143,6 +143,9 @@
 //------------------------------------------------------------
 
 @include f.mq(sp) {
+  .swiper-slide  img:last-of-type{
+    object-position: 80% 50%;
+  }
   .l-header__inner {
     position: fixed;
     width: 100%;

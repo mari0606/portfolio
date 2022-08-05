@@ -10,7 +10,8 @@
   }
 
   &__img {
-    width: 400px; 
+    width: 400px;
+
     img {
       border-radius: 25% 10%;
     }
@@ -28,7 +29,7 @@
   &__gallery {
     display: flex;
     flex-wrap: wrap;
-    margin: 80px 0 100px;
+    margin-bottom: 100px;
 
     .item {
       width: 270px;
@@ -40,6 +41,8 @@
       }
     }
   }
+
+  
 
   .p-fv__hovermask {
     opacity: 0;
@@ -76,6 +79,7 @@
     }
   }
 }
+
 .morewave {
   background-color: f.$white;
 }
@@ -87,6 +91,7 @@
     justify-content: center;
   }
 }
+
 @include f.mq(sp) {
   .p-more {
     &__inner {
@@ -94,17 +99,27 @@
       flex-direction: column;
       align-items: center;
     }
+
     &__img {
       width: 80%;
     }
+
     &__text {
       margin-top: 40px;
       width: 80%;
     }
   }
+
   .p-fv__gallery {
     flex-direction: column;
     align-items: center;
-    // width: 1080px;
+  }
+
+  .p-fv__hovermask {
+    display: none;
+  }
+
+  .p-fv__hovermask.active {
+    display: block;
   }
 }

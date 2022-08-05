@@ -31,6 +31,7 @@ li {
   margin: 0 auto;
   text-align: center;
 }
+
 //------------------------------------------------------------
 //scrollfadeIn
 //------------------------------------------------------------
@@ -39,19 +40,24 @@ li {
   transform: translateY(40px);
   opacity: 0;
 }
+
 .scroll_up.on {
   transform: translateY(0);
   opacity: 1.0;
 }
+
 .time02 {
   transition-delay: .3s;
 }
+
 .time03 {
   transition-delay: .5s;
 }
+
 .time04 {
   transition-delay: .7s;
 }
+
 //------------------------------------------------------------
 //@media screen (max-width:1080px)
 //------------------------------------------------------------
@@ -64,7 +70,7 @@ li {
     width: 1080px;
     margin: 0 auto;
     padding: 0 20px;
-    
+
   }
 
   img {
@@ -84,6 +90,7 @@ li {
   .wrapper {
     width: 100%;
   }
+
   .pc {
     display: none;
   }
@@ -93,6 +100,8 @@ li {
 //safari
 //------------------------------------------------------------
 
-_::-webkit-full-page-media, _:future, :root .wave {
+_::-webkit-full-page-media,
+_:future,
+:root .wave {
   height: 75px;
-  }
+}

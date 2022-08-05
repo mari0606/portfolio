@@ -1,4 +1,11 @@
 //------------------------------------------------------------
+//Aboutmoer(index.thml)sp版のテキスト表示挙動
+//------------------------------------------------------------
+$(".item").click(function () {
+    $(".p-fv__hovermask").toggleClass("active");
+});
+
+//------------------------------------------------------------
 //toggle(SP)
 //------------------------------------------------------------
 $(".l-header__toggle").click(function () { //ボタンがクリックされたら
@@ -11,6 +18,9 @@ $(".l-header__inner li").click(function () { //ナビゲーションのリンク
     $(".l-header__inner").removeClass('panelactive'); //ナビゲーションのpanelactiveクラスも除去
 });
 
+$(".l-header__list a").on('click', function (event) {
+    $(".l-header__toggle").trigger('click');
+});
 
 //------------------------------------------------------------
 //swipe(mainvisual)
