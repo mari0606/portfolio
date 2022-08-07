@@ -44,10 +44,27 @@
       color: f.$black;
     }
 
-    p {
-      padding: 15px;
+    &__desc {
       background-color: f.$white;
+      padding: 15px;
     }
+
+    &__ttl {
+      text-align: center;
+      display: block;
+      font-size: 2.0rem;
+      font-weight: f.$bold;
+    }
+
+    &__txt {
+      font-size: 1.4rem;
+      text-align: left;
+      &:first-of-type {
+        margin-bottom: 1em;
+      }
+    }
+
+    
 
     figure {
       overflow: hidden;
