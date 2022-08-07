@@ -59,12 +59,11 @@
     &__txt {
       font-size: 1.4rem;
       text-align: left;
+
       &:first-of-type {
         margin-bottom: 1em;
       }
     }
-
-    
 
     figure {
       overflow: hidden;
@@ -356,7 +355,7 @@
     padding-bottom: 20px;
 
     figure {
-      width: 80%;
+      width: 100%;
       right: 0;
       left: 0;
       margin: auto;
