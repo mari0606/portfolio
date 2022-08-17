@@ -423,6 +423,12 @@ _:future,
   display: flex;
   gap: 0 70px;
 }
+.l-header__logo {
+  width: 70px;
+  position: fixed;
+  z-index: 999;
+  margin-left: 3%;
+}
 .l-header li {
   font-size: 2.5rem;
 }
