@@ -31,7 +31,7 @@
 
   &__right {
     text-align: right;
-    padding-top: 80px;
+    padding-top: 100px;
   }
 }
 
@@ -345,6 +345,7 @@
     width: 100%;
     height: auto;
     gap: 30px 0;
+    align-items: center;
   }
 
   .card-right {
@@ -381,9 +382,12 @@
   }
 
   #page-top {
+      right: 5px;
+      bottom: 5px;
     a {
       width: 40px;
       height: 40px;
+      font-size: 20px;
     }
   }
 

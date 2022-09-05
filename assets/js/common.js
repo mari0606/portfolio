@@ -1,9 +1,14 @@
 //------------------------------------------------------------
 //Aboutmoer(index.thml)sp版のテキスト表示挙動
 //------------------------------------------------------------
-$(".item").click(function () {
-    $(".p-fv__hovermask").toggleClass("active");
-});
+// $(".item").click(function () {
+//     $(".p-fv__hovermask").toggleClass("active");
+// });
+
+    $('.item').click(function() {
+        $('.p-fv__hovermask',this).toggleClass("active");
+    });
+
 
 //------------------------------------------------------------
 //toggle(SP)

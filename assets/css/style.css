@@ -423,12 +423,6 @@ _:future,
   display: flex;
   gap: 0 70px;
 }
-.l-header__logo {
-  width: 70px;
-  position: fixed;
-  z-index: 999;
-  margin-left: 3%;
-}
 .l-header li {
   font-size: 2.5rem;
 }
@@ -640,7 +634,7 @@ _:future,
   }
 }
 .p-about {
-  padding-top: 140px;
+  padding-top: 100px;
 }
 .p-about__inner {
   display: flex;
@@ -742,8 +736,8 @@ _:future,
 }
 
 .p-skills {
-  margin-top: 130px;
-  padding-top: 80px;
+  margin-top: 100px;
+  padding-top: 100px;
   background-color: #EEE9E6;
 }
 .p-skills__inner {
@@ -832,7 +826,7 @@ _:future,
 }
 .p-vision__bg {
   height: 1080px;
-  padding-top: 110px;
+  padding-top: 100px;
   background-image: url(../img/vision-bg.png);
   background-size: cover;
   background-repeat: no-repeat;
@@ -976,7 +970,7 @@ _:future,
 }
 .c-title__right {
   text-align: right;
-  padding-top: 80px;
+  padding-top: 100px;
 }
 
 .c-works__card a {
@@ -1273,6 +1267,7 @@ _:future,
     width: 100%;
     height: auto;
     gap: 30px 0;
+    align-items: center;
   }
   .card-right {
     float: right;
@@ -1300,9 +1295,14 @@ _:future,
   .c-btn a {
     color: #ffffff;
   }
+  #page-top {
+    right: 5px;
+    bottom: 5px;
+  }
   #page-top a {
     width: 40px;
     height: 40px;
+    font-size: 20px;
   }
   .c-tap {
     width: 15%;
@@ -1340,6 +1340,7 @@ _:future,
   width: 270px;
   height: 250px;
   position: relative;
+  cursor: pointer;
 }
 .p-fv__gallery .item:hover .p-fv__hovermask {
   opacity: 1;
@@ -1352,7 +1353,7 @@ _:future,
   top: 0;
   left: 0;
   background-color: rgba(0, 0, 0, 0.6);
-  transition: all 0.6s ease;
+  transition: all 0.3s ease;
 }
 .p-fv .p-fv__hovermask .p-fv__tit {
   position: absolute;
@@ -1375,6 +1376,9 @@ _:future,
   right: 0;
   margin: auto;
   text-align: left;
+}
+.p-fv .p-fv__hovermask.active {
+  opacity: 1;
 }
 
 .morewave {

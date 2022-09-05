@@ -37,6 +37,7 @@
       width: 270px;
       height: 250px;
       position: relative;
+      cursor: pointer;
 
       &:hover .p-fv__hovermask {
         opacity: 1;
@@ -54,7 +55,7 @@
     top: 0;
     left: 0;
     background-color: rgba(0, 0, 0, 0.6);
-    transition: all .6s ease;
+    transition: all .3s ease;
 
     .p-fv__tit {
       position: absolute;
@@ -79,6 +80,9 @@
       margin: auto;
       text-align: left;
     }
+  }
+  .p-fv__hovermask.active {
+    opacity: 1;
   }
 }
 
