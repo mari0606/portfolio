@@ -761,7 +761,11 @@ _:future,
 .p-works__list {
   display: flex;
   justify-content: space-between;
-  gap: 0 10px;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.p-works__list li {
+  width: calc(50% - 5px);
 }
 .p-works .c-btn {
   opacity: 0;
@@ -882,11 +886,20 @@ _:future,
     width: 300px;
   }
   .p-skills__bg {
-    width: 100%;
+    width: 90%;
+    padding-top: 20px;
     height: auto;
+  }
+  .p-works__inner {
+    padding-bottom: 0;
   }
   .p-works__list {
     flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  .p-works__list li {
+    width: 90%;
   }
   .p-works .c-btn {
     opacity: 1;
@@ -1272,9 +1285,6 @@ _:future,
   .card-right {
     float: right;
   }
-  .c-works__card {
-    padding-bottom: 20px;
-  }
   .c-works__card figure {
     width: 100%;
     right: 0;
@@ -1283,11 +1293,7 @@ _:future,
   }
   .c-works__card p {
     margin: 0 auto;
-    width: 80%;
     text-align: left;
-  }
-  .p-works__contents {
-    margin-bottom: 60px;
   }
   .c-btn {
     background-color: #82acac;

@@ -40,6 +40,7 @@
 //------------------------------------------------------------
 .c-works {
   &__card {
+
     a {
       color: f.$black;
     }
@@ -353,8 +354,6 @@
   }
 
   .c-works__card {
-    padding-bottom: 20px;
-
     figure {
       width: 100%;
       right: 0;
@@ -364,13 +363,8 @@
 
     p {
       margin: 0 auto;
-      width: 80%;
       text-align: left;
     }
-  }
-
-  .p-works__contents {
-    margin-bottom: 60px;
   }
 
   .c-btn {
@@ -382,8 +376,9 @@
   }
 
   #page-top {
-      right: 5px;
-      bottom: 5px;
+    right: 5px;
+    bottom: 5px;
+
     a {
       width: 40px;
       height: 40px;

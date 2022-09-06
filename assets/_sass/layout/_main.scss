@@ -141,7 +141,11 @@
   &__list {
     display: flex;
     justify-content: space-between;
-    gap: 0 10px;
+    flex-wrap: wrap;
+    gap: 10px;
+    li {
+      width: calc(50% - 5px);
+    }
   }
 
   & .c-btn {
@@ -298,17 +302,24 @@
     .fluid {
       width: 300px;
     }
-
   }
 
   .p-skills__bg {
-    width: 100%;
+      width: 90%;
+      padding-top: 20px;
     height: auto;
+  }
+  .p-works__inner {
+    padding-bottom: 0;
   }
 
   .p-works__list {
     flex-direction: column;
-
+    align-items: center;
+    gap: 20px;
+    li {
+      width: 90%;
+    }
   }
 
   .p-works .c-btn {
