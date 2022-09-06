@@ -762,10 +762,10 @@ _:future,
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 20px;
 }
 .p-works__list li {
-  width: calc(50% - 5px);
+  width: calc(50% - 10px);
 }
 .p-works .c-btn {
   opacity: 0;
