@@ -142,9 +142,10 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 20px;
+
     li {
-      width: calc(50% - 5px);
+      width: calc(50% - 10px);
     }
   }
 
@@ -246,6 +247,7 @@
       &:not(:last-of-type) {
         padding-bottom: 40px;
       }
+
       font-size: 2rem;
       color: f.$black;
     }
@@ -296,7 +298,7 @@
     }
 
     &__btn a {
-        color: f.$hover;
+      color: f.$hover;
     }
 
     .fluid {
@@ -305,10 +307,11 @@
   }
 
   .p-skills__bg {
-      width: 90%;
-      padding-top: 20px;
+    width: 90%;
+    padding-top: 20px;
     height: auto;
   }
+
   .p-works__inner {
     padding-bottom: 0;
   }
@@ -317,6 +320,7 @@
     flex-direction: column;
     align-items: center;
     gap: 20px;
+
     li {
       width: 90%;
     }
@@ -328,11 +332,12 @@
 
   .p-contact__inner p {
     white-space: nowrap;
-    padding: 40px ;
+    padding: 40px;
   }
 
   .p-vision__board {
     padding: 40px 20px;
+
     p {
       font-size: 1.5rem;
       text-align: left;
